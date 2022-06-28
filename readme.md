@@ -1,5 +1,10 @@
 # How to 
 
+## Prerequiresite
+
+- Install visual code: https://code.visualstudio.com
+- Install git: https://git-scm.com/download/win
+
 ## Install
 
 - `git clone https://github.com/Tenkuu1/fuyuko.git`
