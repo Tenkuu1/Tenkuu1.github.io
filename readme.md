@@ -1,5 +1,9 @@
 # How to 
 
+## Install
+
+- `git clone https://github.com/Tenkuu1/fuyuko.git`
+
 ## Check updates
 
 - `git status`
