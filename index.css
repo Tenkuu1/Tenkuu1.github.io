@@ -6,6 +6,7 @@ body, html {
 
 h1 {
     margin: 0;
+    font-family: 'Permanent Marker';
 }
 
 .header{
@@ -66,4 +67,41 @@ h1 {
 
 .hidden{
     display: none;
+}
+
+.animes {
+    background: #000;
+    padding: 40px;
+    color: white;
+}
+
+.animes__list{
+    position: relative;
+}
+
+.animes__scroll{
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.anime__item {
+    width: 250px;
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+.anime__item img {
+    max-width: 100%;
+    object-fit: cover;
+    min-height: 100%;
+}
+
+.animes__video{
+    margin-right: 20px;
+}
+
+.animes__video a{
+    color: rgb(231, 0, 0);
 }
