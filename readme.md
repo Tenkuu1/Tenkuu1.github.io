@@ -7,7 +7,11 @@
 
 ## Install
 
-- `git clone https://github.com/Tenkuu1/fuyuko.git`
+- Créer un dossier web dans document
+- ouvrir ce dossier dans visual studio 
+- Dans le menu au dessus, ouvrir un terminal: vue > terminal
+- Cloner lo projet en copiant cette ligne dans le terminal: `git clone https://github.com/Tenkuu1/fuyuko.git`
+- Accéder au nouveau dossier en tapant dans le terminal: `cd fuyuko`
 
 ## Check updates
 
