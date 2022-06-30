@@ -96,6 +96,10 @@ h1 {
     margin-top: 0;
 }
 
+img:not([src]):not([srcset]) {
+    visibility: hidden;
+}
+
 @media (max-width: 800px) {
     .animes {
         padding: 20px;
@@ -119,3 +123,4 @@ h1 {
         margin-top: 10px;
     }
 }
+

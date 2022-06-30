@@ -2,6 +2,7 @@ class Index {
     constructor() {
         window.addEventListener("load", (event) => {
             this.listenInputChange()
+            this.lazyloadIframe()
         });
     }
 
@@ -22,6 +23,12 @@ class Index {
                 $el.closest('.animes').classList.add('hidden');
             }
         })
+    }
+
+    lazyloadIframe(){
+        const lazyLoadInstance = new LazyLoad({
+            // Your custom settings go here
+        });
     }
 }
 
