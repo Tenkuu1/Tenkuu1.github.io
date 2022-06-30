@@ -2,6 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #000;
 }
 
 h1 {
@@ -45,26 +46,6 @@ h1 {
     width: 100%;
 }
 
-.videos {
-    background-color: black;
-    padding: 40px;
-    color: white;
-}
-
-.video {
-    display: flex; 
-    margin: 30px;
-}
-
-.video a {
-    color: rgb(231, 0, 0);
-}
-
-.description{
-    max-width: 400px;
-    margin: 10px;
-}
-
 .hidden{
     display: none;
 }
@@ -82,6 +63,7 @@ h1 {
 .animes__scroll{
     display: flex;
     overflow-x: auto;
+    overflow-y: hidden;
     flex-wrap: nowrap;
     flex-direction: row;
 }
@@ -104,4 +86,36 @@ h1 {
 
 .animes__video a{
     color: rgb(231, 0, 0);
+}
+
+.description h3{
+    margin-bottom: 0;
+}
+
+.description p{
+    margin-top: 0;
+}
+
+@media (max-width: 800px) {
+    .animes {
+        padding: 20px;
+    }
+
+    .anime__item{
+        width: 200px;
+    }
+
+    .animes__video{
+        width: 240px;
+        flex: 0 0 auto;
+    }
+
+    .animes__video iframe{
+        max-width: 100%;
+        height: auto;
+    }
+
+    h2{
+        margin-top: 10px;
+    }
 }

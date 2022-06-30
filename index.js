@@ -8,18 +8,18 @@ class Index {
     listenInputChange(){
         document.querySelector('.search input').addEventListener('change', (event) => {
             const search = event.target.value;
-            this.findEpisod(search)
+            this.findAnime(search)
         });
     }
 
-    findEpisod(search){
-        document.querySelectorAll('.video h2').forEach(($el) => {
-            $el.closest('.video').classList.remove('hidden');
+    findAnime(search){
+        document.querySelectorAll('.animes h2').forEach(($el) => {
+            $el.closest('.animes').classList.remove('hidden');
 
             console.log($el.textContent);
 
-            if(!$el.textContent.includes(search)){
-                $el.closest('.video').classList.add('hidden');
+            if(!$el.textContent.toLowerCase().includes(search.toLowerCase())){
+                $el.closest('.animes').classList.add('hidden');
             }
         })
     }
