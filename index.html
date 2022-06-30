@@ -7,6 +7,7 @@
     <title>FUYUKO</title>
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="manifest" href="/manifest.webmanifest">
     <link rel="stylesheet" href="index.css" />
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.2/dist/lazyload.min.js"></script>
     <script src="index.js"></script>
@@ -16,7 +17,11 @@
 </head>
 <body>
     <div class="header">
-        <h1>FUYUKO</h1>
+        <h1>
+            <a href="/">
+                FUYUKO
+            </a>
+        </h1>
 
         <div class="search">
             <input type="text" value="" name="seach" placeholder="Rechercher un épisode" />
@@ -29,11 +34,11 @@
         <div class="animes__list">
             <div class="animes__scroll">
                 <div class="anime__item">
-                    <img class="lazy" data-src="images/rwby.jpg" alt="RWBY:Ice Queendom" />
+                    <img src="images/rwby.jpg" alt="RWBY:Ice Queendom" />
                 </div>
                 <div class="anime__item">
                     <a href="#tokyoghoul">
-                        <img class="lazy" data-src="images/tokyoghoul.webp" alt="TokyoGhoul" />
+                        <img src="images/tokyoghoul.webp" alt="TokyoGhoul" />
                     </a>
                 </div>
                 <div class="anime__item">

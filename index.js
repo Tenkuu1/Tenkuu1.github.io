@@ -1,5 +1,7 @@
 class Index {
     constructor() {
+        this.declareServiceWorker()
+
         window.addEventListener("load", (event) => {
             this.listenInputChange()
             this.lazyloadIframe()
@@ -26,9 +28,37 @@ class Index {
     }
 
     lazyloadIframe(){
+        if(!LazyLoad){
+            return;
+        }
+        
         const lazyLoadInstance = new LazyLoad({
             // Your custom settings go here
         });
+    }
+
+    declareServiceWorker(){
+        console.log("test")
+        if ("serviceWorker" in navigator) {
+            // Puis on déclare celui-ci
+            // via la fonction `register`
+            
+            navigator.serviceWorker
+              .register("/service-worker.js")
+              .then(registration => {
+                // On a réussi ! Youpi !
+                console.log(
+                  "App: Achievement unlocked."
+                );
+              })
+              .catch(error => {
+                // Il y a eu un problème
+                console.error(
+                  "App: Crash de Service Worker",
+                  error
+                );
+              });
+          }
     }
 }
 
