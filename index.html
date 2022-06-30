@@ -24,10 +24,21 @@
         </h1>
 
         <div class="search">
-            <input type="text" value="" name="seach" placeholder="Rechercher un Anime" />
+            <select name="search" class="selectAnime">
+                <option value="">Tous</option>
+                <option value="Naruto">Naruto</option>
+                <option value="SABIKUI">SABIKUI</option>
+                <option value="RWBY">RWBY</option>
+                <option value="TOKYO GHOUL">TOKYO GHOUL</option>
+                <option value="Charlotte">Charlotte</option>
+                <option value="OnePunchMan">OnePunchMan</option>
+            </select>
+
+            <select name="episod" class="selectEpisod hidden">
+                <option value="">Tous</option>
+            </select>
         </div>
     </div>
-
 
     <div class="animes" id="list">
         <h2>Disponibilité</h2>
@@ -80,7 +91,8 @@
     </div>
 
     <div class="animes" id="naruto">
-        <h2>Naruto</h2>
+        <img class="cover" src="images/cover/Naruto.jpeg" alt="" />
+        <h2>NARUTO</h2>
         <div class="animes__list">
             <div class="animes__scroll">
                 <div class="animes__video">
@@ -146,16 +158,9 @@
                         <p><a href="">#aventure</a> <a href="">#ninja</a></p>
                     </div>
                 </div>
-
-                <div class="animes__video">
-                    <iframe class="lazy" loading="lazy" width="560" height="315" data-src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <div class="description">
-                        <h3>NARUTO EP S1</h3>
-                        <p><a href="">#aventure</a> <a href="">#ninja</a></p>
-                    </div>
-                </div>
             </div>
         </div>
+        <p class="intro">Naruto est un garçon qui vit dans le village de Konoha. Il rêve de devenir Hokage (un grand chef qui protège son village et qui est très puissant). Mais il est détesté de tout le monde, car il a un démon scellé en lui: le démon renard à neuf queues (Kyubi).</p>
     </div>
 
     <div class="animes" id="sabikui">
