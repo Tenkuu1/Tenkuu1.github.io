@@ -15,7 +15,6 @@ class Index {
                 event.preventDefault();
                 const search = event.currentTarget.dataset.value;
                 const $select =  document.querySelector('.search select.selectAnime');
-                console.log(search);
                 $select.value = search;
                 $select.dispatchEvent(new Event('change'))
             })
@@ -83,7 +82,6 @@ class Index {
 
         $animes.querySelectorAll('h3').forEach(($el) => {
             const episod = $el.textContent.replace(title + ' ', '');
-            console.log(episod);
             const option = document.createElement("option");
             option.value = episod;
             option.text = episod;
@@ -103,7 +101,6 @@ class Index {
     }
 
     declareServiceWorker(){
-        console.log("test")
         if ("serviceWorker" in navigator) {
             // Puis on déclare celui-ci
             // via la fonction `register`

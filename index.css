@@ -5,6 +5,46 @@ body, html {
     background: #000;
 }
 
+@media (min-width: 800px) and (hover: hover) {
+    ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+        transition: 0.3s;
+        margin-top: 4px;
+    }
+    ::-webkit-scrollbar-button {
+        width: 0;
+        height: 0;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: rgb(231, 0, 0);
+        border: 0px none #ffffff;
+        border-radius: 50px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgb(106, 0, 0);
+    }
+    ::-webkit-scrollbar-thumb:active {
+        background: rgb(76, 0, 0);
+    }
+    ::-webkit-scrollbar-track {
+        background: #000;
+        border: 0px none #ffffff;
+        border-radius: 50px;
+    }
+    ::-webkit-scrollbar-track:hover {
+        background: #000;
+    }
+    ::-webkit-scrollbar-track:active {
+        background: #000;
+    }
+    ::-webkit-scrollbar-corner {
+        background: transparent;
+    }
+}
+
+
+
 h1 {
     margin: 0;
     font-family: 'Permanent Marker';
@@ -91,6 +131,8 @@ h1 a {
     overflow-y: hidden;
     flex-wrap: nowrap;
     flex-direction: row;
+    padding-bottom: 5px;
+    cursor: pointer;
 }
 
 .anime__item {
