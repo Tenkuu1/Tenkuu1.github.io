@@ -23,3 +23,7 @@
 - `git add .`
 - `git commit -m "..."`
 - `git push`
+
+## Récupérer les nouvelles mises à jour 
+
+- `git pull`

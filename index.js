@@ -5,7 +5,21 @@ class Index {
         window.addEventListener("load", (event) => {
             this.listenInputChange()
             this.lazyloadIframe()
+            this.listenCoverClick()
         });
+    }
+
+    listenCoverClick(){
+        document.querySelectorAll('#list .anime__item a').forEach($link => {
+            $link.addEventListener('click', (event) => {
+                event.preventDefault();
+                const search = event.currentTarget.dataset.value;
+                const $select =  document.querySelector('.search select.selectAnime');
+                console.log(search);
+                $select.value = search;
+                $select.dispatchEvent(new Event('change'))
+            })
+        })
     }
 
     listenInputChange(){
